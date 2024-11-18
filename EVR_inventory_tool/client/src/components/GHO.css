@@ -1,0 +1,113 @@
+/* Container for the entire GHO Dashboard */
+.dashboard-container {
+    background-color: #f4f4f9;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the title of the GHO Dashboard */
+.dashboard-container h1 {
+    font-size: 3rem;
+    /* Increased font size for a larger heading */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #1964aa;
+    /* Dark blue color */
+    margin-bottom: 40px;
+    /* Increased margin to push it away from the table */
+    text-align: center;
+    /* Centered the title */
+}
+
+/* Styling for the table */
+.items-table {
+    width: 100%;
+    max-width: 1400px;
+    /* Increased the max width to make the table bigger */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Styling for the table header */
+.items-table th {
+    background-color: #1964aa;
+    color: white;
+    padding: 15px 20px;
+    /* Increased padding for better spacing */
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Styling for the table cells */
+.items-table td {
+    padding: 15px 20px;
+    /* Increased padding for better cell spacing */
+    text-align: left;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for the rows */
+.items-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the first column (ID) */
+.items-table td:first-child {
+    font-weight: bold;
+}
+
+/* Buttons section below the table */
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    /* Adds space between buttons */
+}
+
+/* General button styles */
+.dashboard-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1964aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.dashboard-button:hover {
+    background-color: #1964aa;
+}
+
+/* Responsive Design: Adjust table for smaller screens */
+@media (max-width: 768px) {
+    .items-table {
+        font-size: 0.9rem;
+    }
+
+    .items-table th,
+    .items-table td {
+        padding: 10px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
